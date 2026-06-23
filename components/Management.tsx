@@ -19,16 +19,23 @@ const managementAreas = [
 ];
 
 const managementPhotos = [
-  { src: "/images/img6.jpg", alt: "Team management", position: "object-center" },
+  {
+    src: "/images/img6.jpg",
+    alt: "Team management",
+    position: "object-center",
+    frame: "aspect-[3/2]",
+  },
   {
     src: "/images/img7.png",
     alt: "Management event photo",
     position: "object-center",
+    frame: "aspect-[3/2]",
   },
   {
-    src: "/images/img8.png",
-    alt: "Management social media photo",
-    position: "object-top",
+    src: "/images/img8.jpg",
+    alt: "Coach supporting an athlete during training",
+    position: "object-center",
+    frame: "aspect-[4/5]",
   },
 ];
 
@@ -67,7 +74,7 @@ export default function Management() {
           {managementPhotos.map((photo) => (
             <div
               key={photo.src}
-              className="relative aspect-[3/2] overflow-hidden border border-zinc-300 bg-zinc-100"
+              className={`relative ${photo.frame} overflow-hidden border border-zinc-300 bg-zinc-100`}
             >
               <Image
                 src={photo.src}
