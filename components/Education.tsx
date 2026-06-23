@@ -1,0 +1,67 @@
+const education = [
+    {
+        program: "Computer Science",
+        institution: "University of British Columbia",
+        status: "Current",
+        focus: "Software engineering, systems, and technical problem solving.",
+    },
+    {
+        program: "Cognitive Systems",
+        institution: "University of British Columbia",
+        status: "Completed",
+        focus: "Brain & Cognition, computation, and human-centered systems.",
+    },
+];
+
+export default function Education() {
+    return (
+        <section
+            id="education"
+            className="bg-zinc-950 px-6 py-24 text-white sm:px-10 lg:px-16 lg:py-32"
+        >
+            <div className="mx-auto max-w-6xl">
+                <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+                    <div>
+                        <p className="text-sm font-medium uppercase text-zinc-400">
+                            Education
+                        </p>
+                        <h2 className="mt-6 max-w-md text-4xl font-semibold sm:text-5xl">
+                            Academic background.
+                        </h2>
+                    </div>
+
+                    <p className="max-w-2xl text-xl leading-9 text-zinc-300 sm:text-2xl sm:leading-10">
+                        Studying computer science at UBC with a cognitive systems
+                        foundation.
+                    </p>
+                </div>
+
+                <div className="mt-16 border-t border-zinc-700">
+                    {education.map((item) => (
+                        <article
+                            key={item.program}
+                            className="grid gap-6 border-b border-zinc-700 py-8 md:grid-cols-[160px_1fr]"
+                        >
+                            <p className="text-sm font-medium uppercase text-zinc-500">
+                                {item.status}
+                            </p>
+
+                            <div className="grid gap-5 md:grid-cols-[1fr_1.2fr]">
+                                <div>
+                                    <h3 className="text-2xl font-semibold">{item.program}</h3>
+                                    <p className="mt-2 text-base text-zinc-400">
+                                        {item.institution}
+                                    </p>
+                                </div>
+
+                                <p className="text-lg leading-8 text-zinc-300">
+                                    {item.focus}
+                                </p>
+                            </div>
+                        </article>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+}
