@@ -4,17 +4,17 @@ const managementAreas = [
   {
     title: "Team BC Manager",
     description:
-      "Supporting athletes, coaches, and team logistics with clear communication and steady coordination.",
+      "Supporting a delegation of 80+ athletes, coaches, and chaperones for the duration of Canadian Championships.",
   },
   {
-    title: "Training Camps | Competitions | Fundraisers",
+    title: "Event Coordinaation",
     description:
-      "Planning and coordinating events, schedules, details, and on-site operations.",
+      "Planning and coordinating competitions, fundraisers, and high-performance training camps with over 100 attendees.",
   },
   {
-    title: "Social Media",
+    title: "NCCP Level 3 Coach",
     description:
-      "Creating and organizing content that keeps the team visible, informed, and connected.",
+      ".",
   },
 ];
 

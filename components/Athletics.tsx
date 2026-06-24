@@ -3,14 +3,14 @@ import Image from "next/image";
 const athleticHighlights = [
     "World Cup Finalist",
     "World Championship medalist",
-    "NCCP Level 3 Coach",
+    "National Champion",
 ];
 
 const athleticsPhotos = [
     { src: "/images/img2.jpg", alt: "Athletics photo 1" },
     { src: "/images/img3.jpg", alt: "Athletics photo 2" },
     { src: "/images/img4.jpg", alt: "Athletics photo 3" },
-    { src: "/images/img5.jpg", alt: "Athletics photo 4" },
+    { src: "/images/img5.png", alt: "Athletics photo 4" },
 ];
 
 export default function Athletics() {

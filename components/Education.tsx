@@ -1,12 +1,12 @@
 const education = [
     {
-        program: "Computer Science",
+        program: "BSc in Computer Science",
         institution: "University of British Columbia",
         status: "Current",
         focus: "Software engineering, systems, and technical problem solving.",
     },
     {
-        program: "Cognitive Systems",
+        program: "BSc in Cognitive Systems",
         institution: "University of British Columbia",
         status: "Completed",
         focus: "Brain & Cognition, computation, and human-centered systems.",
@@ -25,15 +25,7 @@ export default function Education() {
                         <p className="text-sm font-medium uppercase text-zinc-400">
                             Education
                         </p>
-                        <h2 className="mt-6 max-w-md text-4xl font-semibold sm:text-5xl">
-                            Academic background.
-                        </h2>
                     </div>
-
-                    <p className="max-w-2xl text-xl leading-9 text-zinc-300 sm:text-2xl sm:leading-10">
-                        Studying computer science at UBC with a cognitive systems
-                        foundation.
-                    </p>
                 </div>
 
                 <div className="mt-16 border-t border-zinc-700">

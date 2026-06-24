@@ -32,13 +32,15 @@ export default function Hero() {
 
                 <div
                     id="top"
-                    className="flex flex-1 items-center justify-center py-20 text-center lg:py-28"
+                    className="flex flex-1 items-center justify-center py-20 text-center sm:py-24 lg:py-28"
                 >
-                    <div>
-                        <h1 className="max-w-2xl text-2xl font-semibold leading-snug sm:text-4xl lg:text-5xl">
-                            Hello, I&apos;m a Cognitive Systems Graduate and current Computer
-                            Science Student.
+                    <div className="mx-auto flex max-w-3xl flex-col items-center gap-6">
+                        <h1 className="text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
+                            Hannah Brown
                         </h1>
+                        <p className="max-w-2xl text-base leading-7 text-zinc-300 sm:text-lg sm:leading-8">
+                            Current Computer Science student, and former Team Canada athlete with a previous degree in Cognitive Systems. Interested in building software that improves systems, simplifies workflows, and creates better user experiences.
+                        </p>
                     </div>
                 </div>
             </div>

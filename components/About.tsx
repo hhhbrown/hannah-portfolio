@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 const socialLinks = [
-    { label: "LinkedIn", href: "#" },
-    { label: "GitHub", href: "#" },
-    { label: "Email", href: "#" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/hannah-brown-0ab629308/" },
+    { label: "GitHub", href: "https://github.com/hhhbrown" },
+    { label: "Email", href: "mailto:hmbrown@student.ubc.ca" },
 ];
 
 export default function About() {
@@ -22,17 +22,13 @@ export default function About() {
                 <div className="mt-14 grid gap-12 lg:grid-cols-[1fr_360px] lg:items-start">
                     <div>
                         <p className="max-w-2xl text-xl leading-9 text-zinc-800 sm:text-2xl sm:leading-10">
-                            I&apos;m a Cognitive Systems graduate and Computer Science student
-                            at the University of British Columbia with interests in software
-                            engineering, systems design, user experience, and operations. My
-                            background spans web development, high-performance sport,
-                            coaching, and event management. As a former Team Canada athlete
-                            and World Championship medalist, I&apos;ve spent years working in
-                            environments where discipline, consistency, and continuous
-                            improvement matter. Today, I bring that same mindset to building
-                            software. I&apos;m particularly interested in creating products that
-                            improve systems, simplify workflows, and make complex processes
-                            easier for people to navigate.
+                            I&apos;m currently studying Computer Science at the University of British Columbia. 
+                            After completing my first degree in Cognitive Systems, I competed internationally for Canada in trampoline gymnastics, 
+                            earning a World Championship team medal and developing a deep appreciation for discipline, 
+                            consistency, and community involvement. Today, I'm interested in applying those same principles to software. 
+                            My background spans software development, coaching, event management, and operations. 
+                            I'm particularly drawn to building products that improve systems, simplify workflows, 
+                            and create better experiences for the people and communities they serve.
                         </p>
 
                         <ul className="mt-10 flex flex-wrap gap-x-8 gap-y-4 border-t border-zinc-300 pt-6">
