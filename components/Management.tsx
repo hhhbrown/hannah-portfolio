@@ -14,7 +14,7 @@ const managementAreas = [
   {
     title: "NCCP Level 3 Coach",
     description:
-      ".",
+      "Coached athletes at the provincial and national level responsible for athlete development, competition preparation, and long-term training planning.",
   },
 ];
 
