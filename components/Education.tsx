@@ -1,15 +1,15 @@
 const education = [
     {
-        program: "BSc in Computer Science",
+        program: "B.Sc. in Computer Science",
         institution: "University of British Columbia",
         status: "Current",
-        focus: "Software engineering, systems, and technical problem solving.",
+        focus: "Second Degree Program (BCS)",
     },
     {
-        program: "BSc in Cognitive Systems",
+        program: "B.Sc. in Cognitive Systems",
         institution: "University of British Columbia",
         status: "Completed",
-        focus: "Brain & Cognition, computation, and human-centered systems.",
+        focus: "Brain & Cognition Specialization",
     },
 ];
 
@@ -22,9 +22,9 @@ export default function Education() {
             <div className="mx-auto max-w-6xl">
                 <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
                     <div>
-                        <p className="text-sm font-medium uppercase text-zinc-400">
+                        <h2 className="text-4xl font-semibold leading-tight text-white sm:text-5xl">
                             Education
-                        </p>
+                        </h2>
                     </div>
                 </div>
 
@@ -46,7 +46,7 @@ export default function Education() {
                                     </p>
                                 </div>
 
-                                <p className="text-lg leading-8 text-zinc-300">
+                                <p className="text-base leading-7 text-zinc-300">
                                     {item.focus}
                                 </p>
                             </div>

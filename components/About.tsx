@@ -14,21 +14,23 @@ export default function About() {
         >
             <div className="mx-auto max-w-6xl">
                 <div className="max-w-2xl">
-                    <p className="text-sm font-medium uppercase text-zinc-500">
+                    <h2 className="text-4xl font-semibold leading-tight text-zinc-950 sm:text-5xl">
                         About
-                    </p>
+                    </h2>
                 </div>
 
                 <div className="mt-14 grid gap-12 lg:grid-cols-[1fr_360px] lg:items-start">
                     <div>
-                        <p className="max-w-2xl text-xl leading-9 text-zinc-800 sm:text-2xl sm:leading-10">
-                            I&apos;m currently studying Computer Science at the University of British Columbia. 
-                            After completing my first degree in Cognitive Systems, I competed internationally for Canada in trampoline gymnastics, 
-                            earning a World Championship team medal and developing a deep appreciation for discipline, 
-                            consistency, and community involvement. Today, I'm interested in applying those same principles to software. 
-                            My background spans software development, coaching, event management, and operations. 
-                            I'm particularly drawn to building products that improve systems, simplify workflows, 
-                            and create better experiences for the people and communities they serve.
+                        <p className="max-w-2xl text-base leading-8 text-zinc-700 sm:text-lg sm:leading-8">
+                            After graduating from Cognitive Systems at UBC, I spent several years competing internationally
+                            for Canada in trampoline gymnastics. I retired after a pretty serious knee injury in 2024 and
+                            took on more leadership roles, including organizing competitions, training camps, and other programs
+                            for athletes across British Columbia.
+
+                            I&apos;ve always enjoyed finding better ways to do things, whether that&apos;s creating a competition
+                            schedule with no event conflicts or finding a new drill that helps an athlete learn a skill more easily.
+                            Over time, that interest led me toward software and back to UBC to study Computer Science. Since then,
+                            I&apos;ve enjoyed learning how to turn my ideas into tools that other people can use.
                         </p>
 
                         <ul className="mt-10 flex flex-wrap gap-x-8 gap-y-4 border-t border-zinc-300 pt-6">

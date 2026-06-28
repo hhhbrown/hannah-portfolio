@@ -2,6 +2,7 @@ import Image from "next/image";
 
 type Project = {
     title: string;
+    status?: string;
     subtitle: string;
     problem: string;
     solution: string;
@@ -11,7 +12,6 @@ type Project = {
         alt: string;
         fit?: "cover" | "contain";
     };
-    placeholderLabel: string;
     links: {
         label: string;
         href: string;
@@ -22,15 +22,14 @@ const trainingTrackerProject: Project = {
     title: "Training Tracker",
     subtitle: "A tool for logging training sessions and reviewing progress.",
     problem:
-        "Training plans often span notebooks, spreadsheets, and memory, making it harder to see patterns over time or share between coaches.",
+        "Training plans often live in notebooks, spreadsheets, and memory, making it harder for coaches to track progress or share information.",
     solution:
-        "A shared system for coaches that keeps sessions and routines in one place so progress can be reviewed and tracked over time.",
-    tech: ["Next.js", "TypeScript", "React", "Tailwind CSS"],
+        "A shared platform for coaches that keeps sessions and routines all in one place so plans can shared, reviewed, and updated from a mobile device.",
+    tech: ["PostgreSQL", "Next.js", "TypeScript", "React", "Tailwind CSS"],
     image: {
         src: "/images/trainingtracker.png",
         alt: "Training Tracker project screenshot",
     },
-    placeholderLabel: "Training dashboard placeholder",
     links: [
         { label: "GitHub", href: "https://github.com/hhhbrown/trampoline-training-tracker" },
         { label: "Demo", href: "https://trampoline-training-tracker.vercel.app/" },
@@ -39,17 +38,17 @@ const trainingTrackerProject: Project = {
 
 const saveToDesktopProject: Project = {
     title: "Save to Desktop",
-    subtitle: "In progress: A web app for organizing and sharing event photos.",
+    status: "In Progress",
+    subtitle: "A web app for collecting and organizing event photos.",
     problem:
-        "Finding and collecting event photos after the fact can be challenging.",
+        "After an event, there's often no simple way for guests to share all of their photos with the organizer.",
     solution:
-        "A simple app that allows event organizers to create an event and share a link for guests to upload photos.",
-    tech: ["Cloud Storage", "AWS", "S3",],
+        "A web app where organizers can create an event and share a link for guests to easily upload photos to a single location.",
+    tech: ["DynamoDB", "Next.js", "TypeScript", "AWS S3",],
     image: {
         src: "/images/savetodesktop.png",
         alt: "Save to Desktop project screenshot",
     },
-    placeholderLabel: "Saved resource placeholder",
     links: [
         { label: "GitHub", href: "https://github.com/hhhbrown/save-to-desktop" },
     ],
@@ -57,18 +56,17 @@ const saveToDesktopProject: Project = {
 
 const registrationManagerProject: Project = {
     title: "Registration Manager",
-    subtitle: "Java desktop application developed as part of a software construction course.",
+    subtitle: "Java application exploring object-oriented software design.",
     problem:
-        "The project focused on applying object-oriented design principles to a real-world registration system while practicing testing, persistence, and software architecture.",
+        "The goal was to gain experience designing, debugging, testing, and maintaining a larger Java codebase.",
     solution:
-        "Built a desktop application for managing athlete registrations and competition entries, with JSON persistence and comprehensive JUnit testing.",
+        "Built a desktop application that emphasized object-oriented design, unit testing with JUnit, and readable, maintainable code.",
     tech: ["Java", "Swing", "JUnit", "JSON"],
     image: {
         src: "/images/UML_Design_Diagram.jpg",
         alt: "Registration Manager UML design diagram",
         fit: "contain",
     },
-    placeholderLabel: "UML design diagram",
     links: [
         { label: "GitHub", href: "https://github.com/hhhbrown/registration-manager" },
     ],
@@ -97,7 +95,6 @@ function ProjectVisual({ project }: { project: Project }) {
                         Screenshot
                     </p>
                     <p className="mt-2 max-w-xs text-xl leading-8 text-zinc-700">
-                        {project.placeholderLabel}
                     </p>
                 </div>
             )}
@@ -113,9 +110,9 @@ export default function Projects() {
         >
             <div className="mx-auto max-w-6xl">
                 <div className="grid gap-10 border-t border-zinc-300 pt-8 lg:grid-cols-[0.75fr_1.25fr]">
-                    <p className="text-sm font-medium uppercase text-zinc-500">
+                    <h2 className="text-4xl font-semibold leading-tight text-zinc-950 sm:text-5xl">
                         Projects
-                    </p>
+                    </h2>
                 </div>
 
                 <div className="mt-20 space-y-24 lg:space-y-32">
@@ -132,13 +129,20 @@ export default function Projects() {
                                 </div>
 
                                 <div className={reverseLayout ? "lg:order-1" : undefined}>
-                                    <p className="text-sm font-medium uppercase text-zinc-500">
-                                        {String(index + 1).padStart(2, "0")}
-                                    </p>
-                                    <h3 className="mt-4 text-4xl font-semibold leading-tight sm:text-5xl">
+                                    <div className="flex flex-wrap items-center gap-3">
+                                        <p className="text-sm font-medium uppercase text-zinc-500">
+                                            {String(index + 1).padStart(2, "0")}
+                                        </p>
+                                        {project.status ? (
+                                            <span className="border border-zinc-300 px-2.5 py-1 text-xs font-medium uppercase text-zinc-600">
+                                                {project.status}
+                                            </span>
+                                        ) : null}
+                                    </div>
+                                    <h3 className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl">
                                         {project.title}
                                     </h3>
-                                    <p className="mt-4 text-xl leading-8 text-zinc-700">
+                                    <p className="mt-4 text-base leading-7 text-zinc-700 sm:text-lg">
                                         {project.subtitle}
                                     </p>
 

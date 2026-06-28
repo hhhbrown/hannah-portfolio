@@ -22,19 +22,19 @@ export default function Athletics() {
             <div className="mx-auto max-w-6xl">
                 <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
                     <div>
-                        <p className="text-sm font-medium uppercase text-zinc-400">
+                        <h2 className="text-4xl font-semibold leading-tight text-white sm:text-5xl">
                             Athletics
-                        </p>
-                        <h2 className="mt-6 max-w-lg text-4xl font-semibold sm:text-5xl">
-                            Trampoline Gymnastics
                         </h2>
+                        <h3 className="mt-1 max-w-lg text-2xl font-semibold leading-tight sm:text-3xl">
+                            Trampoline Gymnastics
+                        </h3>
                     </div>
 
                     <div>
-                        <p className="max-w-2xl text-xl leading-9 text-zinc-300 sm:text-2xl sm:leading-10">
+                        <h4 className="max-w-2xl text-2xl font-semibold leading-tight text-white sm:text-3xl">
                             Canadian National Team Member:  2021 - 2023
-                        </p>
-                        <ul className="mt-10 grid gap-4 sm:grid-cols-3">
+                        </h4>
+                        <ul className="mt-5 grid gap-4 sm:grid-cols-3">
                             {athleticHighlights.map((highlight) => (
                                 <li
                                     key={highlight}

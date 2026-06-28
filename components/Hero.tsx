@@ -38,8 +38,9 @@ export default function Hero() {
                         <h1 className="text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
                             Hannah Brown
                         </h1>
-                        <p className="max-w-2xl text-base leading-7 text-zinc-300 sm:text-lg sm:leading-8">
-                            Current Computer Science student, and former Team Canada athlete with a previous degree in Cognitive Systems. Interested in building software that improves systems, simplifies workflows, and creates better user experiences.
+                        <p className="max-w-2xl text-sm leading-7 text-zinc-300 sm:text-base sm:leading-8">
+                            Computer Science student at UBC and former Team Canada athlete with a B.Sc. in Cognitive Systems.
+                            I enjoy using technology to make everyday tasks a little simpler.
                         </p>
                     </div>
                 </div>
